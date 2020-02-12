@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.github.martinfrank.simpleciv.swt.gui.CivMapCanvas?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.github.martinfrank.simpleciv.swt.gui.RootController">
+    <!--    <fx:include source="menu.fxml" />-->
+    <HBox spacing="10">
+        <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0"/>
+        </padding>
+        <ScrollPane hbarPolicy="NEVER" prefViewportHeight="232" prefViewportWidth="328" vbarPolicy="NEVER">
+            <CivMapCanvas fx:id="mapCanvas"/>
+        </ScrollPane>
+        <!--        <VBox>-->
+        <!--            <fx:include source="cardstack.fxml" />-->
+        <!--            <TextArea fx:id="console" VBox.vgrow="ALWAYS" />-->
+        <!--            <fx:include source="playerdeck.fxml" />-->
+        <!--        </VBox>-->
+        <Button text="end turn" onAction="#endTurnButton"/>
+    </HBox>
+</VBox>
